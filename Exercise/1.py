@@ -1,31 +1,25 @@
 import numpy as np
-import matplotlib.pyplot as plt
 
 
-def dy_dt(y, t):
-    return t*y + t**3
+def g(p, a):
+    if (p > 0) and (p < 1):
+        return np.power(-np.log(p), a-1)
+    else:
+        return 0
 
 
-def ex(t):
-    return np.exp(0.5*t**2)+0.25*t**4
+vg = np.vectorize(g)
+a = 4
 
+p_list = np.linspace(0, 1, 4001)
+p_list = np.delete(p_list, 0)
+g_list = vg(p_list, a)
+l_list = list(range(1, len(p_list)))
 
-y0 = 1
+# print(g_list)
 
-dt = 0.01
-t = np.arange(0, 1+dt, dt)
-y2 = ex(t)
+i = 0.0
+for l in l_list:
+    i += 0.5*(g_list[l]+g_list[l-1])*(p_list[l]-p_list[l-1])
 
-y = np.zeros_like(t)
-y[0] = y0
-
-for i in range(1, len(t)):
-    y[i] = y[i-1] + dt*dy_dt(y[i-1], t[i-1])
-
-# 绘制解
-plt.plot(t, y)
-plt.plot(t, y2)
-plt.xlabel('t')
-plt.ylabel('y')
-plt.title("Solution to y'(t) = t*y + t^3, y(0) = 1")
-plt.show()
+print(i)
