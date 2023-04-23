@@ -1,48 +1,39 @@
-import matplotlib.pyplot as plt
 import numpy as np
+import matplotlib.pyplot as plt
+
+g = 9.81  # 重力加速度
+N = 1000  # 区间数量
+h = 4 / N  # 区间宽度
+
+# 定义微分方程
+def f(t, y):
+    y1 = y[1]
+    y2 = -g
+    return (y1, y2)
 
 
-def f(x):
-    return np.cos(x)-x
+# 初始条件
+t0 = 0
+Y0 = [30, 0]
 
+# 使用四阶龙格-库塔法求解微分方程
+def rk4(f, t0, Y0, t1, h):
+    t = np.arange(t0, t1 + h, h)
+    Y = np.zeros((len(t), len(Y0)))
+    Y[0] = Y0
+    for i in range(len(t) - 1):
+        k1_y, k1_v = f(t[i], Y[i])
+        k2_y, k2_v = f(t[i] + h/2, [Y[i][0] + h/2*k1_y, Y[i][1] + h/2*k1_v])
+        k3_y, k3_v = f(t[i] + h/2, [Y[i][0] + h/2*k2_y, Y[i][1] + h/2*k2_v])
+        k4_y, k4_v = f(t[i] + h, [Y[i][0] + h*k3_y, Y[i][1] + h*k3_v])
 
-def bi(a, b, tol=1e-6):
-    c_list = []
-    b_list = []
-    while (b-a)/2 > tol:
-        c = (a+b)/2
-        c_list.append(c)
-        b_list.append(b)
-        if f(c) == 0:
-            return c, c_list, b_list
-        elif f(a)*f(c) < 0:
-            b = c
-        else:
-            a = c
-    return (a+b)/2, c_list, b_list
+    return t, Y
 
+# 求解微分方程
+t, Y = rk4(f, t0, Y0, 4, h)
 
-a, b = 0, 2
-root, c_list, b_list = bi(a, b)
-
-print(f"The root is: {root:.4f}")
-
-# 创建一个包含两个子图的大图
-fig, (ax1, ax2) = plt.subplots(1, 2, figsize=(10, 5))
-
-# 在第一个子图中绘制 c 的折线图
-ax1.plot(range(len(c_list)), c_list, linestyle='-', color='blue')
-ax1.set_xlabel('Iteration')
-ax1.set_ylabel('c')
-ax1.set_title('Convergence of c in Bisection Method')
-
-# 在第二个子图中绘制 b 的折线图
-ax2.plot(range(len(b_list)), b_list, linestyle='-', color='red')
-ax2.set_xlabel('Iteration')
-ax2.set_ylabel('b')
-ax2.set_title('Convergence of b in Bisection Method')
-
-# 调整子图间的间距
-plt.subplots_adjust(wspace=0.3)
-
+# 绘制解的图形
+plt.plot(t, Y[:, 0])
+plt.xlabel('时间 t (s)')
+plt.ylabel('高度 y (m)')
 plt.show()
