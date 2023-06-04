@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.141592653-2.6-0.999995 (TeX Live 2023) (preloaded format=xelatex 2023.4.16)  4 JUN 2023 20:26
+This is XeTeX, Version 3.141592653-2.6-0.999995 (TeX Live 2023) (preloaded format=xelatex 2023.4.16)  4 JUN 2023 20:28
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -565,4 +565,157 @@ LaTeX Font Info:    Trying to load font information for OML+lmm on input line 10
 File: omllmm.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
 )
 LaTeX Font Info:    Trying to load font information for OMS+lmsy on input line 101.
- (d:/texlive/2023/texmf-dist
+ (d:/texlive/2023/texmf-dist/tex/latex/lm/omslmsy.fd
+File: omslmsy.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
+)
+LaTeX Font Info:    Trying to load font information for OMX+lmex on input line 101.
+ (d:/texlive/2023/texmf-dist/tex/latex/lm/omxlmex.fd
+File: omxlmex.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
+)
+LaTeX Font Info:    External font `lmex10' loaded for size
+(Font)              <12.045> on input line 101.
+LaTeX Font Info:    External font `lmex10' loaded for size
+(Font)              <8> on input line 101.
+LaTeX Font Info:    External font `lmex10' loaded for size
+(Font)              <6> on input line 101.
+LaTeX Font Info:    Trying to load font information for U+msa on input line 101.
+ (d:/texlive/2023/texmf-dist/tex/latex/amsfonts/umsa.fd
+File: umsa.fd 2013/01/14 v3.01 AMS symbols A
+)
+LaTeX Font Info:    Trying to load font information for U+msb on input line 101.
+ (d:/texlive/2023/texmf-dist/tex/latex/amsfonts/umsb.fd
+File: umsb.fd 2013/01/14 v3.01 AMS symbols B
+)
+LaTeX Font Info:    Trying to load font information for U+rsfs on input line 101.
+ (d:/texlive/2023/texmf-dist/tex/latex/jknapltx/ursfs.fd
+File: ursfs.fd 1998/03/24 rsfs font definition file (jk)
+)
+
+Package fontspec Info: Could not resolve font "SimHei/BI" (it probably doesn't
+(fontspec)             exist).
+
+
+Package fontspec Info: Could not resolve font "SimHei/B" (it probably doesn't
+(fontspec)             exist).
+
+
+Package fontspec Info: Could not resolve font "SimHei/I" (it probably doesn't
+(fontspec)             exist).
+
+
+Package fontspec Info: Font family 'SimHei(0)' created for font 'SimHei' with
+(fontspec)             options [Script={CJK}].
+(fontspec)              
+(fontspec)              This font family consists of the following NFSS
+(fontspec)             series/shapes:
+(fontspec)              
+(fontspec)             - 'normal' (m/n) with NFSS spec.:
+(fontspec)             <->"SimHei/OT:script=hani;language=dflt;"
+(fontspec)             - 'small caps'  (m/sc) with NFSS spec.: 
+
+
+
+LaTeX Font Warning: Font shape `TU/SimHei(0)/b/n' undefined
+(Font)              using `TU/SimHei(0)/m/n' instead on input line 107.
+
+
+Package fontspec Info: Could not resolve font "SimSun/BI" (it probably doesn't
+(fontspec)             exist).
+
+
+Package fontspec Info: Could not resolve font "SimSun/B" (it probably doesn't
+(fontspec)             exist).
+
+
+Package fontspec Info: Could not resolve font "SimSun/I" (it probably doesn't
+(fontspec)             exist).
+
+
+Package fontspec Info: Font family 'SimSun(1)' created for font 'SimSun' with
+(fontspec)             options [Script={CJK}].
+(fontspec)              
+(fontspec)              This font family consists of the following NFSS
+(fontspec)             series/shapes:
+(fontspec)              
+(fontspec)             - 'normal' (m/n) with NFSS spec.:
+(fontspec)             <->"SimSun/OT:script=hani;language=dflt;"
+(fontspec)             - 'small caps'  (m/sc) with NFSS spec.: 
+
+LaTeX Font Info:    External font `lmex10' loaded for size
+(Font)              <10.53937> on input line 146.
+LaTeX Font Info:    External font `lmex10' loaded for size
+(Font)              <7> on input line 146.
+LaTeX Font Info:    External font `lmex10' loaded for size
+(Font)              <5> on input line 146.
+
+LaTeX Font Warning: Font shape `U/rsfs/m/n' in size <10.53937> not available
+(Font)              size <10.95> substituted on input line 146.
+
+[1
+
+]
+File: VDPO.png Graphic file (type bmp)
+<VDPO.png>
+ [2] [3]
+File: 1inout.png Graphic file (type bmp)
+<1inout.png>
+File: 1-5.png Graphic file (type bmp)
+<1-5.png>
+File: 100.png Graphic file (type bmp)
+<100.png>
+ [4] [5]
+File: xiaoyu.png Graphic file (type bmp)
+<xiaoyu.png>
+ [6] (./计算物理.bbl) [7] (d:/texlive/2023/texmf-dist/tex/latex/listings/lstlang1.sty
+File: lstlang1.sty 2023/02/27 1.9 listings language file
+)
+
+Package fontspec Info: Could not resolve font "FangSong/BI" (it probably
+(fontspec)             doesn't exist).
+
+
+Package fontspec Info: Could not resolve font "FangSong/B" (it probably
+(fontspec)             doesn't exist).
+
+
+Package fontspec Info: Could not resolve font "FangSong/I" (it probably
+(fontspec)             doesn't exist).
+
+
+Package fontspec Info: Font family 'FangSong(0)' created for font 'FangSong'
+(fontspec)             with options [Script={CJK}].
+(fontspec)              
+(fontspec)              This font family consists of the following NFSS
+(fontspec)             series/shapes:
+(fontspec)              
+(fontspec)             - 'normal' (m/n) with NFSS spec.:
+(fontspec)             <->"FangSong/OT:script=hani;language=dflt;"
+(fontspec)             - 'small caps'  (m/sc) with NFSS spec.: 
+
+ [8] [9]
+Missing character: There is no μ (U+03BC) in font [lmmono9-regular]:!
+Missing character: There is no μ (U+03BC) in font [lmmono9-regular]:!
+Missing character: There is no μ (U+03BC) in font [lmmono9-regular]:!
+Missing character: There is no μ (U+03BC) in font [lmmono9-regular]:!
+Missing character: There is no μ (U+03BC) in font [lmmono9-regular]:!
+[10] [11] 
+enddocument/afterlastpage: lastpage setting LastPage.
+(./计算物理.aux)
+
+LaTeX Font Warning: Size substitutions with differences
+(Font)              up to 0.41063pt have occurred.
+
+
+LaTeX Font Warning: Some font shapes were not available, defaults substituted.
+
+ ) 
+Here is how much of TeX's memory you used:
+ 13268 strings out of 476683
+ 315814 string characters out of 5807575
+ 2083012 words of memory out of 5000000
+ 33247 multiletter control sequences out of 15000+600000
+ 539673 words of font info for 129 fonts, out of 8000000 for 9000
+ 1348 hyphenation exceptions out of 8191
+ 89i,12n,97p,409b,1908s stack positions out of 10000i,1000n,20000p,200000b,200000s
+
+Output written on 计算物理.pdf (11 pages).
